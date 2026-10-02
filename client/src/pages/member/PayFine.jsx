@@ -55,7 +55,7 @@ const PayFine = () => {
             {formatCurrency(fine.amount)}
           </div>
           <p style={{ color: 'var(--text-muted)', marginBottom: 16 }}>{fine.reason}</p>
-          <div style={{ padding: 16, background: 'var(--bg-tertiary)', borderRadius: 'var(--radius-md)', textAlign: 'left' }}>
+          <div style={{ padding: 16, background: 'var(--bg-tertiary)', border: '1px solid var(--border-secondary)', borderRadius: 'var(--radius-md)', textAlign: 'left' }}>
             <div className="profile-field">
               <span className="profile-field-label">Book</span>
               <span className="profile-field-value">{fine.borrowRecord?.book?.title}</span>

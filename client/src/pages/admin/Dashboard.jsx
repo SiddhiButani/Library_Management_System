@@ -47,10 +47,10 @@ const AdminDashboard = () => {
 
   const chartOptions = {
     responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { labels: { color: '#94a3b8', font: { family: 'Inter' } } } },
+    plugins: { legend: { labels: { color: '#334155', font: { family: 'Inter' } } } },
     scales: {
-      x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.08)' } },
-      y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.08)' } }
+      x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(226, 232, 240, 0.7)' } },
+      y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(226, 232, 240, 0.7)' } }
     }
   };
 

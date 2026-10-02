@@ -36,8 +36,8 @@ const Reports = () => {
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const chartBase = {
     responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { labels: { color: '#94a3b8', font: { family: 'Inter' } } } },
-    scales: { x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.08)' } }, y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.08)' } } }
+    plugins: { legend: { labels: { color: '#334155', font: { family: 'Inter' } } } },
+    scales: { x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(226, 232, 240, 0.7)' } }, y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(226, 232, 240, 0.7)' } } }
   };
 
   return (
@@ -116,8 +116,8 @@ const Reports = () => {
                 <span style={{ fontWeight: 700, fontSize: 18 }}>{m.count}</span>
               </div>
             ))}
-            <div style={{ marginTop: 16, padding: 12, background: 'var(--bg-tertiary)', borderRadius: 8, textAlign: 'center' }}>
-              <div style={{ fontSize: 13, color: 'var(--text-muted)' }}>Active: {userStats?.activeMembers} | Inactive: {userStats?.inactiveMembers} | New this month: {userStats?.newMembersThisMonth}</div>
+            <div style={{ marginTop: 16, padding: 12, background: 'var(--bg-tertiary)', border: '1px solid var(--border-secondary)', borderRadius: 8, textAlign: 'center' }}>
+              <div style={{ fontSize: 13, color: 'var(--text-secondary)', fontWeight: 500 }}>Active: {userStats?.activeMembers} | Inactive: {userStats?.inactiveMembers} | New this month: {userStats?.newMembersThisMonth}</div>
             </div>
           </div>
         </div>

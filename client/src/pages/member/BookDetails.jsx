@@ -93,24 +93,25 @@ const BookDetails = () => {
           <p style={{ fontSize: 18, color: 'var(--text-muted)', marginBottom: 20 }}>by {book.author}</p>
 
           <div style={{
-            display: 'flex', gap: 24, marginBottom: 24, padding: 20,
-            background: 'var(--bg-tertiary)', borderRadius: 'var(--radius-md)'
+            display: 'flex', alignItems: 'center', justifyContent: 'space-around', gap: 16, marginBottom: 24, padding: '18px 24px',
+            background: '#ffffff', border: '1px solid var(--border-secondary)', borderRadius: 'var(--radius-md)',
+            boxShadow: 'var(--shadow-sm)'
           }}>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: 24, fontWeight: 800, color: book.availableCopies > 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+            <div style={{ textAlign: 'center', flex: 1 }}>
+              <div style={{ fontSize: 26, fontWeight: 800, color: book.availableCopies > 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
                 {book.availableCopies}
               </div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Available</div>
+              <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)', marginTop: 2 }}>Available</div>
             </div>
-            <div style={{ width: 1, background: 'var(--border-secondary)' }}></div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: 24, fontWeight: 800, color: 'var(--accent-blue)' }}>{book.totalCopies}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Total Copies</div>
+            <div style={{ width: 1, height: 36, background: '#cbd5e1' }}></div>
+            <div style={{ textAlign: 'center', flex: 1 }}>
+              <div style={{ fontSize: 26, fontWeight: 800, color: 'var(--accent-blue)' }}>{book.totalCopies}</div>
+              <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)', marginTop: 2 }}>Total Copies</div>
             </div>
-            <div style={{ width: 1, background: 'var(--border-secondary)' }}></div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: 24, fontWeight: 800, color: 'var(--accent-purple)' }}>{borrowCount}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Times Borrowed</div>
+            <div style={{ width: 1, height: 36, background: '#cbd5e1' }}></div>
+            <div style={{ textAlign: 'center', flex: 1 }}>
+              <div style={{ fontSize: 26, fontWeight: 800, color: 'var(--accent-purple)' }}>{borrowCount}</div>
+              <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)', marginTop: 2 }}>Times Borrowed</div>
             </div>
           </div>
 

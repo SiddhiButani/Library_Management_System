@@ -16,14 +16,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           toastOptions={{
             duration: 3000,
             style: {
-              background: '#1e293b',
-              color: '#f1f5f9',
-              border: '1px solid rgba(59, 130, 246, 0.3)',
+              background: '#ffffff',
+              color: '#0f172a',
+              border: '1px solid #e2e8f0',
               borderRadius: '12px',
-              fontSize: '14px'
+              fontSize: '14px',
+              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.08)'
             },
-            success: { iconTheme: { primary: '#10b981', secondary: '#f1f5f9' } },
-            error: { iconTheme: { primary: '#ef4444', secondary: '#f1f5f9' } }
+            success: { iconTheme: { primary: '#059669', secondary: '#ffffff' } },
+            error: { iconTheme: { primary: '#dc2626', secondary: '#ffffff' } }
           }}
         />
       </AuthProvider>
