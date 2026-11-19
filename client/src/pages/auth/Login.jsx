@@ -99,11 +99,7 @@ const Login = () => {
           Don't have an account? <Link to="/register">Sign Up</Link>
         </div>
 
-        <div style={{ marginTop: 20, padding: 16, background: 'var(--bg-tertiary)', borderRadius: 'var(--radius-md)', fontSize: 12, color: 'var(--text-muted)' }}>
-          <strong style={{ color: 'var(--text-secondary)' }}>Demo Credentials:</strong><br />
-          Admin: admin@library.com / admin123<br />
-          Member: rahul@example.com / member123
-        </div>
+       
       </div>
     </div>
   );
